@@ -8,7 +8,6 @@
   src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
 }
 
-
 .container {
   height: calc(100vh);
   overflow: hidden;
@@ -31,17 +30,57 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  margin-top: 100px;
   border-radius: 5px;
   gap: 5rem;
 }
 
-.name{
+.dataContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 800px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 5px solid transparent;
+  border-radius: 20px;
+  /* box-shadow: 0 0 20px rgba(232, 28, 255, 0.7), 0 0 40px rgba(64, 201, 255, 0.7); */
+  /* border-image: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%); */
+  border-image-slice: 1;
+}
+
+.name {
   font-family: "ELIXIA", sans-serif;
   font-size: 80px;
   font-weight: bold;
+  margin-top: -100px;
+  letter-spacing: 10px;
 }
 
-.heroContainer h2{
+.seniority {
   font-family: "Azonix", sans-serif;
+  font-size: 40px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  height: 80px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out;
 }
