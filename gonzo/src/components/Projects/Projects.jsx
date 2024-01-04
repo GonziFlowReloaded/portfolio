@@ -1,9 +1,11 @@
-import React from "react";
+import styles from "./projects.module.css";
 
 const Projects = () => {
   return (
-    <div>
-      <h1>Proyectos</h1>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <h1>Proyectos</h1>
+      </div>
     </div>
   );
 };

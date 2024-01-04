@@ -8,7 +8,47 @@
   src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
 }
 
-.navbar h1 {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  color: #ececec;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 50px;
   font-family: "ELIXIA", sans-serif;
-  
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: #1e549f;
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+  color: #ececec;
+  font-weight: bold;
+}
+
+.itemsContainer li {
+  font-family: "Azonix", sans-serif;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.itemsContainer li:hover {
+  color: #1e549f;
 }

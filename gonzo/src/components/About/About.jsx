@@ -1,9 +1,11 @@
-import React from "react";
+import styles from "./about.module.css";
 
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <h1>About</h1>
+      </div>
     </div>
   );
 };

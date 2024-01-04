@@ -1,0 +1,16 @@
+.container {
+  height: calc(100vh);
+  overflow: hidden;
+  position: relative;
+  background: #081f37;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+  color: #ececec;
+}

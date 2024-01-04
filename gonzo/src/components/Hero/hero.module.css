@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Azonix";
+  src: url("../src/assets/fonts/Azonix.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ELIXIA";
+  src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
+}
+
+
+.container {
+  height: calc(100vh);
+  overflow: hidden;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+  color: #ececec;
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+  border-radius: 5px;
+  gap: 5rem;
+}
+
+.name{
+  font-family: "ELIXIA", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.heroContainer h2{
+  font-family: "Azonix", sans-serif;
+}
