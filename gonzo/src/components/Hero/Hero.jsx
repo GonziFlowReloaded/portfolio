@@ -1,9 +1,14 @@
 import React from "react";
+import particles from "../../assets/particles/particle.min.js";
 
 const Hero = () => {
   return (
     <div>
-      <h1></h1>
+      <script>
+        particleJs(
+          
+        )
+      </script>
     </div>
   );
 };

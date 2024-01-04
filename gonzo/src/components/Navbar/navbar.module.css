@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Azonix";
+  src: url("../src/assets/fonts/Azonix.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ELIXIA";
+  src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
+}
+
+.navbar h1 {
+  font-family: "ELIXIA", sans-serif;
+  
+}
