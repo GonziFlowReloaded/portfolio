@@ -10,10 +10,12 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
         {/* <img src="" alt="" /> */}
-        <h1 className={styles.name}>Gonzi</h1>
+        <Link to="home">
+          <h1 className={styles.name}>Gonzi</h1>
+        </Link>
         <div>
           <ul className={styles.itemsContainer}>
             <Link to="home">

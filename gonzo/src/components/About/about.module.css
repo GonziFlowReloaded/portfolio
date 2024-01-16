@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "Azonix";
+  src: url("../src/assets/fonts/Azonix.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ELIXIA";
+  src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
+}
+/* #6610f2 */
 .container {
   height: calc(100vh);
   overflow: hidden;
   position: relative;
-  background: #081f37;
+  border-image: fill 0 linear-gradient(#000, rgb(43, 39, 61));
 }
 
 .wrapper {
@@ -13,4 +23,105 @@
   height: 100%;
   margin: auto;
   color: #ececec;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  width: 80%;
+  height: 300px;
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.imageContainer {
+  width: 250px;
+  height: 250;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  /* background: rgba(0, 0, 0, 0.75); */
+  background: transparent;
+  /* filter: grayscale(100%); */
+  /* transition: filter 0.3s ease-in-out; */
+}
+
+/* .image:hover { */
+/* filter: none; */
+
+.bioContainer {
+  width: 50%;
+}
+
+.text {
+  font-family: "Azonix", sans-serif;
+  font-size: 17px;
+  /* margin-left: 20px; */
+  /* text-align: justify; */
+}
+
+.button {
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background: rgb(43, 39, 61);
+  color: #ececec;
+  border: solid transparent;
+  border-radius: 100px;
+  font-family: "Azonix", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(58, 50, 92);
+}
+
+.sliderContainer {
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.card {
+  width: 150px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: "Azonix", sans-serif;
+  text-transform: capitalize;
+  /* color: #e81cff; */
+  color: transparent;
+  text-shadow: 0 0 0 rgba(232, 28, 255, 0), 0 0 0 rgba(64, 201, 255, 0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.heading:hover {
+  text-shadow: 0 0 20px rgba(232, 28, 255, 0.7),
+    0 0 40px rgba(64, 201, 255, 0.7);
 }

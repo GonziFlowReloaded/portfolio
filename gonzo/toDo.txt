@@ -1,0 +1,6 @@
+1: armar json con proyectos
+2. copiar fuente para el about
+3: terminar la section del about
+3: armar la section de project
+4: armar la section de contact
+5: armar formulario para cargar proyectos nuevos

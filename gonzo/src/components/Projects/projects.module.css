@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "Azonix";
+  src: url("../src/assets/fonts/Azonix.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ELIXIA";
+  src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
+}
+
 .container {
   height: calc(100vh);
   overflow: hidden;
   position: relative;
-  background: #081f37;
+  border-image: fill 0 linear-gradient(rgb(43, 39, 61), #000);
 }
 
 .wrapper {

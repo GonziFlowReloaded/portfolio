@@ -8,6 +8,10 @@
   src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
 }
 
+.header{
+  margin: 0;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -30,7 +34,7 @@
 }
 
 .name:hover {
-  color: #1e549f;
+  color: #e81cff;
 }
 
 .itemsContainer {
@@ -50,5 +54,5 @@
 }
 
 .itemsContainer li:hover {
-  color: #1e549f;
+  color: #e81cff;
 }

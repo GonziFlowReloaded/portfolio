@@ -1,6 +1,5 @@
-import React from "react";
-import ParticlesBackground from "../Particles/ParticlesBackground";
 import styles from "./hero.module.css";
+import ParticlesBackground from "../Particles/ParticlesBackground";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";

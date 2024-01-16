@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Generador de diagramas de gantt para algoritmos de planificación",
+      "type": null,
+      "repo": null,
+      "deploy": null,
+      "image": null,
+      "tools": ["MatplotLib", "PyQt5", "Numpy", "Pandas"]
+    },
+    {
+      "id": 2,
+      "name": "Simulador de compra venta de Bitcoin",
+      "type": null,
+      "repo": null,
+      "deploy": null,
+      "image": null,
+      "tools": ["WebSocket", "PyQt5", "MatplotLib", "Threading"]
+    },
+    {
+      "id": 3,
+      "name": "Sistema de logueo y registro",
+      "type": null,
+      "repo": null,
+      "deploy": null,
+      "image": null,
+      "tools": ["Pymongo", "PyQt5", "Bcrypt"]
+    },
+    {
+      "id": 4,
+      "name": "Mapa interactivo con procesamiento de coordenadas",
+      "type": null,
+      "repo": null,
+      "deploy": null,
+      "image": null,
+      "tools": ["Regular Expressions", "HTML", "CSS", "JavaScript", "PyQt5"]
+    },
+    {
+      "id": 5,
+      "name": "Automatización de data entry",
+      "type": null,
+      "repo": null,
+      "deploy": null,
+      "image": null,
+      "tools": ["Regular Expressions", "PyQt5", "PDFPlumber", "Openpyxl"]
+    },
+    {
+      "id": 6,
+      "name": "Herramienta para  probabilidad y estadistica",
+      "type": null,
+      "repo": null,
+      "deploy": null,
+      "image": null,
+      "tools": ["Numpy", "Mathplotlib"]
+    }
+  ]
+}
