@@ -20,6 +20,8 @@ const Contact = () => {
       <div className={styles.wrapper}>
         <div className={styles.textContainer}>
           <h1 className={styles.title}>Trabajemos juntos!</h1>
+        </div>
+        <div className={styles.subContainer}>
           <div className={styles.itemsContainer}>
             <ul>
               <li>
@@ -42,38 +44,38 @@ const Contact = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className={styles.formContainer}>
-          <form
-            // onSubmit={handleSubmit}
-            className={styles.form}
-          >
-            <input
-              type="text"
-              name="name"
-              // value={formData.name}
-              placeholder="Nombre"
-              className={styles.input}
-              // onChange={handleChange}
-            />
-            <input
-              type="email"
-              name="email"
-              // value={formData.email}
-              placeholder="Email"
-              className={styles.input}
-              // onChange={handleChange}
-            />
-            <textarea
-              name="message"
-              rows={8}
-              // value={formData.message}
-              placeholder="Mensaje"
-              className={styles.textarea}
-              // onChange={handleChange}
-            />
-            <button className={styles.button}>Enviar</button>
-          </form>
+          <div className={styles.formContainer}>
+            <form
+              // onSubmit={handleSubmit}
+              className={styles.form}
+            >
+              <input
+                type="text"
+                name="name"
+                // value={formData.name}
+                placeholder="Nombre"
+                className={styles.input}
+                // onChange={handleChange}
+              />
+              <input
+                type="email"
+                name="email"
+                // value={formData.email}
+                placeholder="Email"
+                className={styles.input}
+                // onChange={handleChange}
+              />
+              <textarea
+                name="message"
+                rows={8}
+                // value={formData.message}
+                placeholder="Mensaje"
+                className={styles.textarea}
+                // onChange={handleChange}
+              />
+              <button className={styles.button}>Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
