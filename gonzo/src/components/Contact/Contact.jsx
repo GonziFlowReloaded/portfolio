@@ -4,6 +4,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
 import Email from "@mui/icons-material/Email";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -78,6 +79,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
