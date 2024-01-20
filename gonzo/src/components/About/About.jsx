@@ -1,32 +1,14 @@
 import styles from "./about.module.css";
 import image from "../../assets/gonzi.png";
 import Slider from "../Slider/Slider";
-
-const stack = [
-  "PYTHON",
-  "VERCEL",
-  "NETLIFY",
-  "ANACONDA",
-  "MYSQL",
-  "SQL SERVER",
-  "MONGODB",
-  "SQLITE",
-  "PYTORCH",
-  "KERAS",
-  "NUMPY",
-  "PANDAS",
-  "PLOTLY",
-  // "SCIKIT-LEARN",
-  "SCIPY",
-  "TENSORFLOW",
-  "TRELLO",
-];
+import resume from "../../assets/jose_gonzalo_scali_resume.pdf";
 
 const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.mainContainer}>
+          <h1 className={styles.title}>Sobre mi</h1>
           <div className={styles.textContainer}>
             <div className={styles.imageContainer}>
               <img src={image} alt="image" className={styles.image} />
@@ -45,14 +27,17 @@ const About = () => {
             </div>
           </div>
           <button className={styles.button}>
+            <a href={resume} download="scaliResume.pdf">
               Descargar CV
+            </a>
           </button>
           <div className={styles.sliderContainer}>
-            {stack.map((item, index) => (
+            {/* {stack.map((item, index) => (
               <div key={index} className={styles.card}>
                 <p className={styles.heading}>{item}</p>
               </div>
-            ))}
+            ))} */}
+            <Slider />
           </div>
         </div>
       </div>

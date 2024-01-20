@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Azonix";
+  src: url("../src/assets/fonts/Azonix.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ELIXIA";
+  src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 300px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.cardContainer:hover {
+  border: none;
+  background: none;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* perspective: 1000px; */
+  box-shadow: 0 0 0 5px rgb(58, 50, 92);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(13, 39, 61);
+}
+
+.cardContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(43, 39, 61);
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .cardContent {
+  transform: rotateX(0deg);
+}
+
+.image {
+  width: 400px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 13px;
+  color: #ececec;
+  max-width: 80%;
+  font-family: "Azonix", sans-serif;
+}
+
+/* .card:hover svg {
+  scale: 0;
+} */
+
+.p {
+  font-family: "Azonix", sans-serif;
+  font-size: 15px;
+  text-shadow: 0 0 0 rgba(232, 28, 255, 0), 0 0 0 rgba(64, 201, 255, 0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: changeColor 5s linear infinite;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+@keyframes changeColor {
+  0% {
+    color: #8a2be2;
+  }
+  25% {
+    color: #e81cff;
+  }
+  50% {
+    color: #a788ec;
+  }
+  75% {
+    color: #efa0a5;
+  }
+  100% {
+    color: #8a2be2;
+  }
+}
+
+.p:hover {
+  text-shadow: 0 0 20px rgba(232, 28, 255, 0.7),
+    0 0 40px rgba(64, 201, 255, 0.7);
+}
+
+.cardDescription {
+  font-family: "Azonix", sans-serif;
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #ececec;
+  line-height: 1.4;
+}
+
+.toolsContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.tools {
+  font-family: "Azonix", sans-serif;
+  font-size: 13px;
+  margin-top: 100px;
+}
+
+.icon {
+  z-index: 2;
+  cursor: pointer;
+}
