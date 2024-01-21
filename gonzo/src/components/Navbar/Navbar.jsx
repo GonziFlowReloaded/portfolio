@@ -96,7 +96,7 @@ const Navbar = () => {
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <Link to="home">
-          <h1 className={styles.name}>Gonzi</h1>
+          <h1 className={styles.name}>GS</h1>
         </Link>
         <div>
           <ul className={styles.itemsContainer}>
@@ -129,7 +129,7 @@ const Navbar = () => {
           >
             <div className={styles.menuSubContainer}>
               <div className={styles.mobileImgContainer}>
-                <h1 className={styles.logo}>Gonzi</h1>
+                <h1 className={styles.logo}>GS</h1>
                 <i className={styles.iconCloseContainer} onClick={toggleMenu}>
                   <ArrowUpwardIcon />
                 </i>

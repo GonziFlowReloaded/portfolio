@@ -82,7 +82,6 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* margin-top: 200px; */
 }
 
 .imageContainer {
@@ -94,14 +93,8 @@
   width: 200px;
   height: 200px;
   border-radius: 15px;
-  /* background: rgba(0, 0, 0, 0.75); */
   background: transparent;
-  /* filter: grayscale(100%); */
-  /* transition: filter 0.3s ease-in-out; */
 }
-
-/* .image:hover { */
-/* filter: none; */
 
 .bioContainer {
   width: 50%;
@@ -110,8 +103,12 @@
 .text {
   font-family: "Azonix", sans-serif;
   font-size: 17px;
-  /* margin-left: 20px; */
-  /* text-align: justify; */
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -168,4 +165,71 @@
 .heading:hover {
   text-shadow: 0 0 20px rgba(232, 28, 255, 0.7),
     0 0 40px rgba(64, 201, 255, 0.7);
+}
+
+@media (max-width: 800px) {
+  .container,
+  .wrapper {
+    max-width: 100vw;
+  }
+
+  .title {
+    font-size: 55px;
+    margin-top: 100px;
+  }
+
+  .textContainer {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .bioContainer {
+    width: 90vw;
+    margin-top: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+    text-align: center;
+    text-align: justify;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    margin-top: 100px;
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 720px) {
+  .buttonContainer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 200px;
+    height: 50px;
+  }
 }

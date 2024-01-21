@@ -87,6 +87,13 @@
 }
 
 @media (max-width: 800px) {
+  .navbar {
+    max-height: 100px;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
   .itemsContainer {
     display: none;
   }
@@ -146,6 +153,13 @@
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    max-height: 100px;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
   .itemsContainer {
     display: none;
   }

@@ -38,3 +38,12 @@ section {
     scroll-snap-type: unset;
   }
 }
+
+.loader {
+  background: #000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
