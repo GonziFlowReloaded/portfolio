@@ -19,37 +19,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  /* width: 400px; */
+  /* height: 400px; */
   position: relative;
-  border-radius: 10px;
-  background: transparent;
   overflow: hidden;
 }
 
-.cardContainer:hover {
-  border: none;
-  background: none;
-}
+/* .cardContainer:hover { */
+/* background: none; */
 
 .card {
   position: relative;
   width: 400px;
   height: 400px;
-  background: #000;
-  border-radius: 10px;
+  background: transparent;
+  border-radius: 15px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* perspective: 1000px; */
-  box-shadow: 0 0 0 5px rgb(58, 50, 92);
+  perspective: 1000px;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(13, 39, 61);
 }
 
 .cardContent {
@@ -71,18 +66,22 @@
 }
 
 .image {
+  height: 400px;
   width: 400px;
+  object-fit: cover;
+  filter: brightness(0.8);
 }
 
 .cardTitle {
   margin: 0;
-  font-size: 13px;
+  margin-top: 10px;
+  font-size: 15px;
   color: #ececec;
   max-width: 80%;
   font-family: "Azonix", sans-serif;
 }
 
-/* .card:hover svg {
+/* .card:hover image {
   scale: 0;
 } */
 
@@ -129,17 +128,56 @@
 
 .toolsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
+  margin-left: 0;
+  margin-top: 20px;
 }
 
 .tools {
   font-family: "Azonix", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 100px;
 }
 
 .icon {
-  z-index: 2;
+  margin-top: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100vw;
+  }
+
+  .carousel {
+    width: 85vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 100vw;
+  }
+
+  .carousel{
+    width: 80vw;
+  }
+
+  .card{
+    width: 95%;
+  }
+
+  .toolsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-left: 0;
+  }
+
+
+  .cardDescription {
+    margin-left: -5px;
+  }
 }

@@ -6,7 +6,7 @@
       "type": null,
       "repo": null,
       "deploy": null,
-      "image": null,
+      "image": "/gantt.png",
       "tools": ["MatplotLib", "PyQt5", "Numpy", "Pandas"]
     },
     {
@@ -15,16 +15,16 @@
       "type": null,
       "repo": null,
       "deploy": null,
-      "image": null,
+      "image": "/simulator.png",
       "tools": ["WebSocket", "PyQt5", "MatplotLib", "Threading"]
     },
     {
       "id": 3,
       "name": "Sistema de logueo y registro",
       "type": null,
-      "repo": null,
+      "repo": "https://github.com/GonziFlowReloaded/SimpleLogin",
       "deploy": null,
-      "image": null,
+      "image": "/login.png",
       "tools": ["Pymongo", "PyQt5", "Bcrypt"]
     },
     {
@@ -33,7 +33,7 @@
       "type": null,
       "repo": null,
       "deploy": null,
-      "image": null,
+      "image": "/interactiveMap.png",
       "tools": ["Regular Expressions", "HTML", "CSS", "JavaScript", "PyQt5"]
     },
     {
@@ -42,16 +42,16 @@
       "type": null,
       "repo": null,
       "deploy": null,
-      "image": null,
+      "image": "/dataEntry.png",
       "tools": ["Regular Expressions", "PyQt5", "PDFPlumber", "Openpyxl"]
     },
     {
       "id": 6,
-      "name": "Herramienta para  probabilidad y estadistica",
+      "name": "Herramienta para probabilidad y estadistica",
       "type": null,
-      "repo": null,
+      "repo": "https://github.com/GonziFlowReloaded/ProbabilidadYEstadisticaTool",
       "deploy": null,
-      "image": null,
+      "image": "/prop&Stat.png",
       "tools": ["Numpy", "Mathplotlib"]
     }
   ]

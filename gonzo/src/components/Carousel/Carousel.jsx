@@ -52,19 +52,24 @@ const Carousel = () => {
           {projects.data.map((project, index) => (
             <div className={styles.cardContainer} key={index}>
               <div className={styles.card}>
-                <img src={project.images} alt="image" className={styles.image} />
+                <img src={project.image} alt="image" className={styles.image} />
                 <div className={styles.cardContent}>
                   <p className={styles.cardTitle}>{project.name}</p>
                   <div className={styles.toolsContainer}>
-                    <p className={styles.cardDescription}><p className={styles.p}>Tecnologías:</p> {project.tools.join(" ")}</p>
+                    <div className={styles.cardDescription}>
+                      <p className={styles.p}>Tecnologías:</p> #
+                      {project.tools.join(" #")}
+                    </div>
                   </div>
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GitHubIcon className={styles.icon} />
-                  </a>
+                  {project.repo && (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHubIcon className={styles.icon} />
+                    </a>
+                  )}
                   {project.deploy && (
                     <a
                       href={project.deploy}

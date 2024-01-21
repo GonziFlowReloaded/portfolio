@@ -1,3 +1,0 @@
-1: terminar la section de proyectos
-2: conectar el formulario de contacto con el mail del nene
-3: jugar god of war en eld descanso

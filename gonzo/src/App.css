@@ -32,3 +32,9 @@ section {
   height: 100vh;
   scroll-snap-align: center;
 }
+
+@media (max-width: 800px) {
+  html {
+    scroll-snap-type: unset;
+  }
+}

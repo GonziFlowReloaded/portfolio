@@ -8,6 +8,11 @@
   src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Alpha";
+  src: url("../src/assets/fonts/Alpha-Centauri.ttf") format("truetype");
+}
+
 .container {
   height: calc(100vh);
   overflow: hidden;
@@ -37,8 +42,8 @@
 }
 
 .title {
-  font-family: "Azonix", sans-serif;
-  font-size: 50px;
+  font-family: "Alpha", sans-serif;
+  font-size: 60px;
   text-shadow: 0 0 0 rgba(232, 28, 255, 0), 0 0 0 rgba(64, 201, 255, 0);
   background-clip: text;
   -webkit-background-clip: text;
@@ -159,4 +164,50 @@
 
 .button:hover {
   background-color: rgb(58, 50, 92);
+}
+
+@media (max-width: 800px) {
+  .wrapper,
+  .container {
+    max-width: 100%;
+  }
+
+  .subContainer {
+    height: 50vh;
+    width: 90vw;
+  }
+
+  .textContainer {
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .itemsContainer {
+    display: none;
+  }
+
+  .formContainer {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container,
+  .wrapper {
+    width: 100vw;
+  }
+
+  .textContainer {
+  }
+
+  .title {
+    font-size: 55px;
+    text-align: center;
+  }
 }

@@ -9,6 +9,13 @@ const Projects = () => {
         <div className={styles.textContainer}>
           <h1 className={styles.title}>Proyectos</h1>
         </div>
+        <div className={styles.subTitleContainer}>
+          <h3 className={styles.subTitle}>
+            <a href="https://github.com/GonziFlowReloaded">
+              Ver mis últimos proyectos
+            </a>
+          </h3>
+        </div>
         <div className={styles.cardsContainer}>
           <Carousel />
         </div>

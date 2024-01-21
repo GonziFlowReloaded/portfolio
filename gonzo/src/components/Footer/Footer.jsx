@@ -35,10 +35,8 @@ const Footer = () => {
             <WhatsAppIcon className={styles.icon} />
           </a>
         </div>
-        <div>
-          <div className={styles.datacontainer}>
-            &copy; {new Date().getFullYear()}: Jose Gonzalo Scali
-          </div>
+        <div className={styles.dataContainer}>
+          &copy; {new Date().getFullYear()}: Jose Gonzalo Scali
         </div>
       </div>
     </footer>

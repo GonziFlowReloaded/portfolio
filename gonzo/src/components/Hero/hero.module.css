@@ -106,16 +106,26 @@
 }
 
 .icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 800px){
-  .dataContainer{
+@media (max-width: 800px) {
+  .container,
+  .wrapper {
     width: 100vw;
   }
 
-  .name{
+  .heroContainer {
+    width: 100vw;
+  }
+
+  .dataContainer {
+    width: 100vw;
+    height: 300px;
+  }
+
+  .name {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 5px;

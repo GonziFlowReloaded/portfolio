@@ -7,6 +7,12 @@
   font-family: "ELIXIA";
   src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Alpha";
+  src: url("../src/assets/fonts/Alpha-Centauri.ttf") format("truetype");
+}
+
 /* #6610f2 */
 .container {
   height: calc(100vh);
@@ -33,8 +39,8 @@
 }
 
 .title {
-  font-family: "Azonix", sans-serif;
-  font-size: 50px;
+  font-family: "Alpha", sans-serif;
+  font-size: 60px;
   text-shadow: 0 0 0 rgba(232, 28, 255, 0), 0 0 0 rgba(64, 201, 255, 0);
   background-clip: text;
   -webkit-background-clip: text;
