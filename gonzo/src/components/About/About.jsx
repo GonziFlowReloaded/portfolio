@@ -91,15 +91,19 @@ const About = () => {
             Sobre mi
           </motion.h1>
           <div className={styles.textContainer}>
-            <motion.div
-              className={styles.imageContainer}
-              ref={pRef}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-            >
-              <img src={image} alt="image" className={styles.image} />
-            </motion.div>
+            <div className={styles.imageContainer}>
+              <motion.img
+                src={image}
+                alt="image"
+                className={styles.image}
+                ref={pRef}
+                initial="initial"
+                animate={isInView && "animate"}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 4 }}
+                preload="auto"
+              />
+            </div>
             <div className={styles.bioContainer}>
               <motion.p
                 className={styles.text}
@@ -108,14 +112,11 @@ const About = () => {
                 ref={pRef}
                 animate={isInView && "animate"}
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-                illo consequuntur nostrum rem nihil eius tenetur delectus
-                pariatur facilis cupiditate ipsam quos labore quisquam adipisci
-                dolorum sunt, suscipit, veniam unde? Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Totam nesciunt, culpa autem,
-                laudantium vitae assumenda animi blanditiis magni accusamus
-                temporibus sint ad laboriosam obcaecati similique vel. Cumque
-                facere at nulla!
+                Analista en Sistemas, Desarrollador Python y Data Scientist. Con
+                más de 2 años de experiencia trabajando con clientes
+                particulares y 7 meses de experiencia como Data Scientist,
+                siempre en constante aprendizaje y trabajando en proyectos que
+                demuestren mi potencial.
               </motion.p>
             </div>
           </div>

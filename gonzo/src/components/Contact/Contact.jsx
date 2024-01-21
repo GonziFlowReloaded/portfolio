@@ -54,7 +54,15 @@ const linksVariants = {
   },
 };
 
-const formVariants = {
+const containerVariants = {
+  animate: {
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const cardsVariants = {
   initial: {
     y: 20,
     opacity: 0,
@@ -64,14 +72,8 @@ const formVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      staggerChildren: 2,
     },
   },
-};
-
-const inputVariants = {
-  initial: { y: 50, opacity: 0 },
-  animate: { y: 0, opacity: 1 },
 };
 
 const Contact = () => {
@@ -204,14 +206,21 @@ const Contact = () => {
             </ul>
           </motion.div>
           <div className={styles.formContainer}>
-            <form ref={formRef} onSubmit={handleSubmit} className={styles.form}>
+            <motion.form
+              variants={containerVariants}
+              initial="initial"
+              animate={isInView && "animate"}
+              ref={ref}
+              onSubmit={handleSubmit}
+              className={styles.form}
+            >
               <motion.input
                 type="text"
                 name="name"
                 value={formData.name}
                 placeholder="Nombre"
                 className={styles.input}
-                variants={inputVariants}
+                variants={cardsVariants}
               />
               <motion.input
                 type="email"
@@ -219,7 +228,9 @@ const Contact = () => {
                 value={formData.email}
                 placeholder="Email"
                 className={styles.input}
-                variants={inputVariants}
+                variants={cardsVariants}
+                animate={isInView && "animate"}
+                ref={ref}
               />
               <motion.textarea
                 name="message"
@@ -227,9 +238,16 @@ const Contact = () => {
                 value={formData.message}
                 placeholder="Mensaje"
                 className={styles.textarea}
-                variants={inputVariants}
+                variants={cardsVariants}
+                animate={isInView && "animate"}
+                ref={ref}
               />
-              <motion.button className={styles.button} variants={inputVariants}>
+              <motion.button
+                className={styles.button}
+                variants={cardsVariants}
+                animate={isInView && "animate"}
+                ref={ref}
+              >
                 Enviar
               </motion.button>
               <Toaster
@@ -248,7 +266,7 @@ const Contact = () => {
                   duration: 5000,
                 }}
               />
-            </form>
+            </motion.form>
           </div>
         </div>
       </div>
