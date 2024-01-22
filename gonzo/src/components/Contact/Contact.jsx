@@ -144,7 +144,8 @@ const Contact = () => {
       .sendForm(
         "service_e84c8xl",
         "template_c256ezi",
-        formRef.current,
+        // formRef.current,
+        event.target,
         "FmzHi7GI51Ka4fn86"
       )
       .then(
