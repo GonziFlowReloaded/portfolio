@@ -51,7 +51,13 @@ const spanVariants = {
   },
 };
 
+const imageVariants = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { duration: 1 } },
+};
+
 const About = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   const [isInView, setIsInView] = useState(false);
   const h1Ref = useRef();
   const pRef = useRef();
@@ -95,13 +101,13 @@ const About = () => {
               <motion.img
                 src={image}
                 alt="image"
-                className={styles.image}
-                ref={pRef}
+                className={`${styles.image} ${
+                  imageLoaded ? styles.imageLoaded : ""
+                }`}
+                onLoad={() => setImageLoaded(true)}
+                variants={imageVariants}
                 initial="initial"
                 animate={isInView && "animate"}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 4 }}
-                preload="auto"
               />
             </div>
             <div className={styles.bioContainer}>
