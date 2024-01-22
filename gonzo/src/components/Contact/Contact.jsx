@@ -170,7 +170,7 @@ const Contact = () => {
             className={styles.title}
             variants={h1Variants}
             initial="initial"
-            animate={isInView && "animate"}
+            animate={isInView ? "animate" : undefined}
             ref={h1Ref}
           >
             Trabajemos juntos!
@@ -182,7 +182,7 @@ const Contact = () => {
             variants={linksVariants}
             initial="initial"
             ref={pRef}
-            animate={isInView && "animate"}
+            animate={isInView ? "animate" : undefined}
           >
             <ul>
               <li>
@@ -209,7 +209,7 @@ const Contact = () => {
             <motion.form
               variants={containerVariants}
               initial="initial"
-              animate={isInView && "animate"}
+              animate={isInView ? "animate" : undefined}
               ref={ref}
               onSubmit={handleSubmit}
               className={styles.form}
@@ -218,6 +218,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 value={formData.name}
+                onChange={handleChange}
                 placeholder="Nombre"
                 className={styles.input}
                 variants={cardsVariants}
@@ -226,26 +227,28 @@ const Contact = () => {
                 type="email"
                 name="email"
                 value={formData.email}
+                onChange={handleChange}
                 placeholder="Email"
                 className={styles.input}
                 variants={cardsVariants}
-                animate={isInView && "animate"}
+                animate={isInView ? "animate" : undefined}
                 ref={ref}
               />
               <motion.textarea
                 name="message"
                 rows={8}
                 value={formData.message}
+                onChange={handleChange}
                 placeholder="Mensaje"
                 className={styles.textarea}
                 variants={cardsVariants}
-                animate={isInView && "animate"}
+                animate={isInView ? "animate" : undefined}
                 ref={ref}
               />
               <motion.button
                 className={styles.button}
                 variants={cardsVariants}
-                animate={isInView && "animate"}
+                animate={isInView ? "animate" : undefined}
                 ref={ref}
               >
                 Enviar

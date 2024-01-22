@@ -3,7 +3,7 @@ import { React, useState } from "react";
 import { Link } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import MenuIcon from "@mui/icons-material/Menu";
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const navLinks = [
   { title: "inicio", href: "home" },
@@ -141,18 +141,15 @@ const Navbar = () => {
                 exit="initial"
                 className={styles.menuItemContainer}
               >
-                {navLinks.map((link, index) => {
-                  return (
-                    <div className={styles.links}>
-                      <MobileNavLink
-                        key={index}
-                        title={link.title}
-                        href={link.href}
-                        onClick={closeMenu}
-                      />
-                    </div>
-                  );
-                })}
+                {navLinks.map((link) => (
+                  <div className={styles.links} key={link.title}>
+                    <MobileNavLink
+                      title={link.title}
+                      href={link.href}
+                      onClick={closeMenu}
+                    />
+                  </div>
+                ))}
               </motion.div>
             </div>
           </motion.div>

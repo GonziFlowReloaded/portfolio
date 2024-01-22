@@ -91,7 +91,7 @@ const About = () => {
             className={styles.title}
             variants={h1Variants}
             initial="initial"
-            animate={isInView && "animate"}
+            animate={isInView ? "animate" : undefined}
             ref={h1Ref}
           >
             Sobre mi
@@ -107,7 +107,7 @@ const About = () => {
                 onLoad={() => setImageLoaded(true)}
                 variants={imageVariants}
                 initial="initial"
-                animate={isInView && "animate"}
+                animate={isInView ? "animate" : undefined}
               />
             </div>
             <div className={styles.bioContainer}>
@@ -116,7 +116,7 @@ const About = () => {
                 variants={spanVariants}
                 initial="initial"
                 ref={pRef}
-                animate={isInView && "animate"}
+                animate={isInView ? "animate" : undefined}
               >
                 Analista en Sistemas, Desarrollador Python y Data Scientist. Con
                 más de 2 años de experiencia trabajando con clientes
@@ -132,7 +132,7 @@ const About = () => {
               variants={spanVariants}
               initial="initial"
               ref={pRef}
-              animate={isInView && "animate"}
+              animate={isInView ? "animate" : undefined}
             >
               <a href={resume} download="scaliResume.pdf">
                 Descargar CV

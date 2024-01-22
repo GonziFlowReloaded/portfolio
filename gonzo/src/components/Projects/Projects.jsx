@@ -29,7 +29,7 @@ const h1Variants = {
 
 const subTitleVariants = {
   initial: {
-    y: 20,
+    y: -20,
     opacity: 0,
   },
   animate: {
@@ -84,7 +84,7 @@ const Projects = () => {
             className={styles.title}
             variants={h1Variants}
             initial="initial"
-            animate={isInView && "animate"}
+            animate={isInView ? "animate" : undefined}
             ref={h1Ref}
           >
             Proyectos
@@ -94,7 +94,7 @@ const Projects = () => {
           className={styles.subTitleContainer}
           variants={h1Variants}
           initial="initial"
-          animate={isInView && "animate"}
+          animate={isInView ? "animate" : undefined}
           ref={h1Ref}
         >
           <motion.h3
@@ -102,7 +102,7 @@ const Projects = () => {
             variants={subTitleVariants}
             initial="initial"
             ref={pRef}
-            animate={isInView && "animate"}
+            animate={isInView ? "animate" : undefined}
           >
             <a href="https://github.com/GonziFlowReloaded">
               Ver mis últimos proyectos

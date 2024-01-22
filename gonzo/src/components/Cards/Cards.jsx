@@ -9,7 +9,7 @@ const Cards = () => {
       {projects.data.map((project, index) => (
         <div className={styles.cardContainer} key={index}>
           <div className={styles.card}>
-            <img src={project.images} alt="image" className={styles.img} />
+            <img src={project.image} alt="image" className={styles.img} />
             <div className={styles.card__content}>
               <p className={styles.card__title}>{project.name}</p>
               <a href={project.repo} target="_blank" rel="noopener noreferrer">
