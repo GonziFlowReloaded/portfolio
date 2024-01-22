@@ -1,12 +1,18 @@
 @font-face {
   font-family: "Azonix";
-  src: url("../src/assets/fonts/Azonix.otf") format("truetype");
+  src: url("/fonts/Azonix.otf") format("truetype");
 }
 
 @font-face {
   font-family: "ELIXIA";
-  src: url("../src/assets/fonts/ELIXIA.ttf") format("truetype");
+  src: url("/fonts/ELIXIA.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Alpha";
+  src: url("/fonts/Alpha-Centauri.ttf") format("truetype");
+}
+
 
 .header {
   margin: 0;
