@@ -1,11 +1,10 @@
-// En el archivo Slider.js
 import React from "react";
 import styles from "./slider.module.css";
 import stacks from "../../utils/stacks";
-import svg from "../../utils/svg";
+import svgs from "../../utils/svgs";
 
 const Slider = () => {
-  const infiniteStacks = [...stacks, ...stacks];
+  const infiniteStacks = [...svgs, ...svgs];
 
   return (
     <div className={styles.slider}>

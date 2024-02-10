@@ -47,6 +47,7 @@
   animation: changeColor 5s linear infinite;
   transition: text-shadow 0.3s ease-in-out;
   margin-top: 150px;
+
   display: flex;
   justify-content: center;
   align-items: center;

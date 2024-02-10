@@ -111,7 +111,7 @@ const About = () => {
               />
             </div>
             <div className={styles.bioContainer}>
-              <motion.p
+              <motion.article
                 className={styles.text}
                 variants={spanVariants}
                 initial="initial"
@@ -123,7 +123,7 @@ const About = () => {
                 particulares y 7 meses de experiencia como Data Scientist,
                 siempre en constante aprendizaje y trabajando en proyectos que
                 demuestren mi potencial.
-              </motion.p>
+              </motion.article>
             </div>
           </div>
           <div className={styles.buttonContainer}>

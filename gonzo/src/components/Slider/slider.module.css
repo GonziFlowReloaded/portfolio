@@ -9,7 +9,7 @@
 
 @keyframes slideToRight {
   from {
-    transform: translateX(calc(-120%));
+    transform: translateX(calc(-300%));
   }
   to {
     transform: translateX(calc(0%));
@@ -19,7 +19,7 @@
 .slider {
   overflow: hidden;
   padding: 60px 0;
-  width: 100%;
+  width: 75%;
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
@@ -36,9 +36,14 @@
 }
 
 .slide:first-child {
-  animation: 100s slideToLeft infinite linear;
+  animation: 35s slideToLeft infinite linear;
 }
 
 .slide:last-child {
-  animation: 100s slideToRight infinite linear;
+  animation: 35s slideToRight infinite linear;
+}
+
+.image {
+  /* width: 100px; */
+  height: 40px;
 }
