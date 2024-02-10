@@ -10,12 +10,12 @@ const Cards = () => {
         <div className={styles.cardContainer} key={index}>
           <div className={styles.card}>
             <img src={project.image} alt="image" className={styles.img} />
-            <div className={styles.card__content}>
-              <p className={styles.card__title}>{project.name}</p>
+            <div className={styles.cardContent}>
+              <p className={styles.cardTitle}>{project.name}</p>
               <a href={project.repo} target="_blank" rel="noopener noreferrer">
                 <GitHubIcon className={styles.icon} />
               </a>
-              <p className={styles.card__description}>
+              <p className={styles.cardDescription}>
 
               </p>
               {project.deploy && (

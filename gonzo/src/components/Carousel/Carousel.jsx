@@ -55,10 +55,14 @@ const Carousel = () => {
                 <img src={project.image} alt="image" className={styles.image} />
                 <div className={styles.cardContent}>
                   <p className={styles.cardTitle}>{project.name}</p>
-                  <div className={styles.toolsContainer}>
-                    <div className={styles.cardDescription}>
-                      <p className={styles.p}>Tecnologías:</p> #
-                      {project.tools.join(" #")}
+                  <div className={styles.cardDescription}>
+                    <article className={styles.description}>
+                      <p className={styles.p}>Descripción:</p>
+                      {project.description}
+                    </article>
+                    <div className={styles.stackContainer}>
+                      <p className={styles.p}>Tecnologías:</p>
+                      <article>{project.tools.join(",  ")}</article>
                     </div>
                   </div>
                   {project.repo && (

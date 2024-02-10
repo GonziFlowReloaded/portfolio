@@ -6,6 +6,7 @@
       "type": null,
       "repo": null,
       "deploy": null,
+      "description": "Genera diagramas de Gantt utilizando diversos algoritmos de planificación.",
       "image": "/gantt.png",
       "tools": ["MatplotLib", "PyQt5", "Numpy", "Pandas"]
     },
@@ -15,6 +16,7 @@
       "type": null,
       "repo": null,
       "deploy": null,
+      "description": "Esta aplicación genera un gráfico en tiempo real del precio de Bitcoin y te permite jugar a comprar y vender.",
       "image": "/simulator.png",
       "tools": ["WebSocket", "PyQt5", "MatplotLib", "Threading"]
     },
@@ -24,6 +26,7 @@
       "type": null,
       "repo": "https://github.com/GonziFlowReloaded/SimpleLogin",
       "deploy": null,
+      "description": "Forma parte de un proyecto más extenso y utiliza pymongo para registrar usuarios en una base de datos, además de limitar el acceso del cliente mediante la dirección MAC.",
       "image": "/login.png",
       "tools": ["Pymongo", "PyQt5", "Bcrypt"]
     },
@@ -33,6 +36,7 @@
       "type": null,
       "repo": null,
       "deploy": null,
+      "description": "Es un mapa interactivo que procesa enlaces de Google Maps para cargar marcadores, permitiendo también agregar marcadores con un solo clic. Se ofrece la opción de eliminar marcadores tanto individualmente como en su totalidad.",
       "image": "/interactiveMap.png",
       "tools": ["Regular Expressions", "HTML", "CSS", "JavaScript", "PyQt5"]
     },
@@ -42,6 +46,7 @@
       "type": null,
       "repo": null,
       "deploy": null,
+      "description": "Automatización del procesamiento de documentos PDF para extraer datos relevantes y transferirlos a una planilla de Excel.",
       "image": "/dataEntry.png",
       "tools": ["Regular Expressions", "PyQt5", "PDFPlumber", "Openpyxl"]
     },
@@ -51,6 +56,7 @@
       "type": null,
       "repo": "https://github.com/GonziFlowReloaded/ProbabilidadYEstadisticaTool",
       "deploy": null,
+      "description": "Consiste en analizar un bloque de datos y generar gráficos e información valiosa para analizar dicha información.",
       "image": "/prop&Stat.png",
       "tools": ["Numpy", "Mathplotlib"]
     }

@@ -93,14 +93,13 @@
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
-}
-
-.itemsContainer ul li {
   font-family: "Azonix", sans-serif;
 }
 
-.icon {
-  transform: translate(-10%, 20%);
+.itemsContainer ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .formContainer {
