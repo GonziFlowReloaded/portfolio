@@ -36,11 +36,11 @@
 }
 
 .slide:first-child {
-  animation: 35s slideToLeft infinite linear;
+  animation: 200s slideToLeft infinite linear;
 }
 
 .slide:last-child {
-  animation: 35s slideToRight infinite linear;
+  animation: 200s slideToRight infinite linear;
 }
 
 .image {

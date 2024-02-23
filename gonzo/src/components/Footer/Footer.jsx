@@ -18,6 +18,9 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
+        <div className={styles.dataContainer}>
+          &copy; {new Date().getFullYear()}: Jose Gonzalo Scali
+        </div>
         <div className={styles.linkContainer}>
           <a href={links.github}>
             <GitHubIcon className={styles.icon} />
@@ -34,9 +37,6 @@ const Footer = () => {
           <a href={links.whatsapp}>
             <WhatsAppIcon className={styles.icon} />
           </a>
-        </div>
-        <div className={styles.dataContainer}>
-          &copy; {new Date().getFullYear()}: Jose Gonzalo Scali
         </div>
       </div>
     </footer>
