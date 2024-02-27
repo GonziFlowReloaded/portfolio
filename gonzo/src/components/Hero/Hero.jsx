@@ -34,7 +34,7 @@ const textVariants = {
 const links = {
   github: "https://github.com/GonziFlowReloaded",
   linkedin: "https://www.linkedin.com/in/jos%C3%A9-gonzalo-scali-68b0191b5/",
-  mail: "mailto;gonzalojoses@hotmail.com",
+  mail: "mailto:gonzalojoses@hotmail.com",
   instagram: "https://www.instagram.com/gonzo.rar/",
   whatsapp:
     "https://api.whatsapp.com/send/?phone=%2B5493794405832&text&type=phone_number&app_absent=0",
