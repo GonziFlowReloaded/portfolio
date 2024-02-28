@@ -51,8 +51,6 @@
   background-color: rgba(0, 0, 0, 0.75);
   border: 5px solid transparent;
   border-radius: 20px;
-  /* box-shadow: 0 0 20px rgba(232, 28, 255, 0.7), 0 0 40px rgba(64, 201, 255, 0.7); */
-  /* border-image: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%); */
   border-image-slice: 1;
 }
 

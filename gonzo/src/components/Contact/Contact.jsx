@@ -1,80 +1,18 @@
 import styles from "./contact.module.css";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import {
+  h1Variants,
+  linksVariants,
+  containerVariants,
+  cardsVariants,
+} from "../../utils/motions/contactMotion";
 import { Toaster, toast } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import Email from "@mui/icons-material/Email";
 import Footer from "../Footer/Footer";
-
-const h1Variants = {
-  initial: {
-    y: -60,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-    },
-  },
-  scrollButton: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-    },
-  },
-};
-
-const linksVariants = {
-  initial: {
-    y: 20,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-    },
-  },
-  scrollButton: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-    },
-  },
-};
-
-const containerVariants = {
-  animate: {
-    transition: {
-      staggerChildren: 0.5,
-    },
-  },
-};
-
-const cardsVariants = {
-  initial: {
-    y: 20,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-    },
-  },
-};
 
 const Contact = () => {
   const [isInView, setIsInView] = useState(false);

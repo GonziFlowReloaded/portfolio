@@ -4,57 +4,11 @@ import { motion } from "framer-motion";
 import image from "../../assets/gonzi.png";
 import Slider from "../Slider/Slider";
 import resume from "../../assets/jose_gonzalo_scali_resume.pdf";
-
-const h1Variants = {
-  initial: {
-    y: -60,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-    },
-  },
-  scrollButton: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-    },
-  },
-};
-
-const spanVariants = {
-  initial: {
-    y: 20,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-    },
-  },
-  scrollButton: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-    },
-  },
-};
-
-const imageVariants = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1, transition: { duration: 1 } },
-};
+import {
+  h1Variants,
+  spanVariants,
+  imageVariants,
+} from "../../utils/motions/aboutMotion";
 
 const About = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
