@@ -88,7 +88,11 @@ const About = () => {
               ref={pRef}
               animate={isInView ? "animate" : undefined}
             >
-              <a href={resume} download="scaliResume.pdf">
+              <a
+   
+                href={import.meta.env.VITE_RESUME_LINK}
+                target="_blank"
+              >
                 Descargar CV
               </a>
             </motion.button>
