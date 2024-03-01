@@ -80,11 +80,11 @@ const Contact = () => {
 
     await emailjs
       .sendForm(
-        "service_e84c8xl",
-        "template_c256ezi",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         // formRef.current,
         event.target,
-        "FmzHi7GI51Ka4fn86"
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
         (result) => {
