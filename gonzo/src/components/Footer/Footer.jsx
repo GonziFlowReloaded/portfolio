@@ -20,6 +20,7 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.dataContainer}>
           &copy; {new Date().getFullYear()}: Jose Gonzalo Scali
+          <img src="/gonziLogo.png" alt="img" />
         </div>
         <div className={styles.linkContainer}>
           <a href={links.github}>

@@ -13,7 +13,6 @@
   src: url("/fonts/Alpha-Centauri.ttf") format("truetype");
 }
 
-
 .container {
   height: calc(100vh);
   overflow: hidden;
@@ -100,18 +99,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .icon {
-  height: 80px;
-  width: 100px;
+  transform: scale(1.5);
   cursor: pointer;
 }
 
 .icon:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s ease-in-out;
+  color: #e81cff;
+  transition: color 0.3s ease-in-out;
 }
 
 @media (max-width: 800px) {

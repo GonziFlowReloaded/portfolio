@@ -9,6 +9,7 @@ import {
   spanVariants,
   imageVariants,
 } from "../../utils/motions/aboutMotion";
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 const About = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -48,7 +49,7 @@ const About = () => {
             animate={isInView ? "animate" : undefined}
             ref={h1Ref}
           >
-            Sobre mi
+            Sobre mí
           </motion.h1>
           <div className={styles.textContainer}>
             <div className={styles.imageContainer}>
@@ -88,12 +89,9 @@ const About = () => {
               ref={pRef}
               animate={isInView ? "animate" : undefined}
             >
-              <a
-   
-                href={import.meta.env.VITE_RESUME_LINK}
-                target="_blank"
-              >
-                Descargar CV
+              <a href={import.meta.env.VITE_RESUME_LINK} target="_blank">
+                Ver resumen
+              <ArrowOutwardIcon />
               </a>
             </motion.button>
           </div>
