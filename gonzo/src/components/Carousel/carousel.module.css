@@ -28,6 +28,11 @@
   overflow: hidden;
 }
 
+.cardContainer.modalOpen .cardContent {
+  top: 0;
+  transform: rotateX(0deg);
+}
+
 .card {
   position: relative;
   width: 400px;

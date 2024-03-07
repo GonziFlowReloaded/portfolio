@@ -45,7 +45,12 @@ const Carousel = () => {
         <div className={styles.carousel}>
           <Slider {...settings}>
             {projects.data.map((project, index) => (
-              <div className={styles.cardContainer} key={index}>
+              <div
+                className={`${styles.cardContainer} ${
+                  openModals[index] ? styles.modalOpen : ""
+                }`}
+                key={index}
+              >
                 <div className={styles.card}>
                   <img
                     src={project.image}
